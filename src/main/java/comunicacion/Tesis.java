@@ -12,7 +12,7 @@ public class Tesis extends Escrito{
     }
 
     public String interpretacion(){
-
+        return "a";
     }
 
     public String getLetra() {
@@ -23,11 +23,11 @@ public class Tesis extends Escrito{
         this.letra = letra;
     }
 
-    public String getArgumentos() {
+    public String[] getArgumentos() {
         return argumentos;
     }
 
-    public void setArgumentos(String argumentos) {
+    public void setArgumentos(String[] argumentos) {
         this.argumentos = argumentos;
     }
 
@@ -56,11 +56,16 @@ public class Tesis extends Escrito{
     }
 
     public Tesis (String origen, String titulo, String autor, int paginas, String letra, String[] argumentos, String conclusion, String referencias, String interpretacion){
-        super(Escrito);
+        super(origen, titulo, autor, paginas);
         this.letra = letra;
         this.argumentos = argumentos;
         this.conclusion = conclusion;
         this.referencias = referencias;
         this.interpretacion = interpretacion;
+    }
+    public String toString(){
+        String p = this.getOrigen()+"\n" + this.getTitulo()+"\n" + getAutor()+"\n" + getPaginas()+"\n"+ this.letra+"\n"+ this.argumentos.length+"\n"+this.conclusion+"\n"+ this.referencias;
+        return p;
+
     }
 }
