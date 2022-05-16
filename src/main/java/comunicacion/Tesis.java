@@ -1,26 +1,26 @@
 package comunicacion;
 
 public class Tesis extends Escrito{
-    private String letra ;
+    private String idea ;
     public static String[] argumentos;
     private String conclusion;
     private String referencias;
     private String interpretacion;
 
     public int palabrasTotales(int palabraspaginas){
-        return palabraspaginas*5;
+        return palabraspaginas*5*this.getPaginas();
     }
 
     public String interpretacion(){
-        return "a";
+        return interpretacion;
     }
 
-    public String getLetra() {
-        return letra;
+    public String getIdea() {
+        return idea;
     }
 
-    public void setLetra(String letra) {
-        this.letra = letra;
+    public void setIdea(String letra) {
+        this.idea = letra;
     }
 
     public String[] getArgumentos() {
@@ -57,14 +57,14 @@ public class Tesis extends Escrito{
 
     public Tesis (String origen, String titulo, String autor, int paginas, String letra, String[] argumentos, String conclusion, String referencias, String interpretacion){
         super(origen, titulo, autor, paginas);
-        this.letra = letra;
+        this.idea = letra;
         this.argumentos = argumentos;
         this.conclusion = conclusion;
         this.referencias = referencias;
         this.interpretacion = interpretacion;
     }
     public String toString(){
-        String p = this.getOrigen()+"\n" + this.getTitulo()+"\n" + getAutor()+"\n" + getPaginas()+"\n"+ this.letra+"\n"+ this.argumentos.length+"\n"+this.conclusion+"\n"+ this.referencias;
+        String p = this.getOrigen()+"\n" + this.getTitulo()+"\n" + getAutor()+"\n" + getPaginas()+"\n"+ this.idea+"\n"+ this.argumentos.length+"\n"+this.conclusion+"\n"+ this.referencias;
         return p;
 
     }

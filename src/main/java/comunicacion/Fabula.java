@@ -5,11 +5,11 @@ public class Fabula extends Escrito{
     private String interpretacion ;
 
     public int palabrasTotales(int palabraspaginas ){
-         return palabraspaginas*1;
+         return palabraspaginas*1*this.getPaginas();
     }
 
     public String interpretacion(){
-           return "a";
+           return interpretacion;
     }
 
     public String getEnsenanza() {

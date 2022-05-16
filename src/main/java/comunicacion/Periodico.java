@@ -6,11 +6,11 @@ public class Periodico extends Escrito{
     private String interpretacion;
 
     public int palabrasTotales(int palabraspaginas){
-           return palabraspaginas*10;
+           return palabraspaginas*10*this.getPaginas();
     }
 
     public String interpretacion(){
-          return "a";
+          return interpretacion;
     }
 
     public String getFecha() {
