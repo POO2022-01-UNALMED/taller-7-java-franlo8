@@ -4,8 +4,8 @@ public class Fabula extends Escrito{
     private String ensenanza ;
     private String interpretacion ;
 
-    public int palabrasTotales(int ){
-
+    public int palabrasTotales(int palabraspaginas ){
+         return palabraspaginas*1;
     }
 
     public String interpretacion(){

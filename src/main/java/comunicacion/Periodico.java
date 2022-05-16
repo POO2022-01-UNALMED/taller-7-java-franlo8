@@ -5,8 +5,8 @@ public class Periodico extends Escrito{
     private String primicia ;
     private String interpretacion;
 
-    public int palabrasTotales(int ){
-
+    public int palabrasTotales(int palabraspaginas){
+           return palabraspaginas*10;
     }
 
     public String interpretacion(){

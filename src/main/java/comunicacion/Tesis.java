@@ -2,13 +2,13 @@ package comunicacion;
 
 public class Tesis extends Escrito{
     private String letra ;
-    private String[] argumentos;
+    public static String[] argumentos;
     private String conclusion;
     private String referencias;
     private String interpretacion;
 
-    public int palabrasTotales(int ){
-
+    public int palabrasTotales(int palabraspaginas){
+        return palabraspaginas*5;
     }
 
     public String interpretacion(){

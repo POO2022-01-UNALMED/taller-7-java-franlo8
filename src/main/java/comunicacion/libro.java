@@ -6,8 +6,8 @@ public class Libro extends Escrito{
     private String edicion ;
     private String interpretacion ;
 
-    public int palabrasTotales(int ){
-
+    public int palabrasTotales(int palabraspaginas){
+        return palabraspaginas*2;
     }
 
     public String interpretacion(){
